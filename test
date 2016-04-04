@@ -2,6 +2,7 @@
   public void testCheckExistingEmptyFolder_existNotEmpty() {
     final Path rootTempDir = Paths.get(System.getProperty("user.home")).resolve("testPath");
     final Path subPath = rootTempDir.resolve("subPath");
+    
     if (subPath.toFile().mkdirs()) {
       try {
         final String checkResult = SystemUtil.checkExistingEmptyFolder(rootTempDir);
