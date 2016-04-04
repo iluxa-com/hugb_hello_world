@@ -1,0 +1,15 @@
+  @Test
+  public void testCheckExistingEmptyFolder_existNotEmpty() {
+    final Path rootTempDir = Paths.get(System.getProperty("user.home")).resolve("testPath");
+    final Path subPath = rootTempDir.resolve("subPath");
+    if (subPath.toFile().mkdirs()) {
+      try {
+        final String checkResult = SystemUtil.checkExistingEmptyFolder(rootTempDir);
+        Assert.assertNotNull(checkResult, "Existing not empty folder should has been reported with error");
+      } finally {
+        cleanUpTestDirectories(rootTempDir);
+      }
+    } else {
+      Assert.fail(String.format("Failed to create test directory %s", subPath));
+    }
+  }
