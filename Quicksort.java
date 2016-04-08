@@ -20,20 +20,7 @@ public class Quicksort  {
     // Get the pivot element from the middle of the list
     int pivot = numbers[low + (high-low)/2];
 
-    // Divide into two lists
-    while (i <= j) {
-      //spaces
-      //tabs
-      // If the current value from the left list is smaller then the pivot
-      // element then get the next element from the left list
-      while (numbers[i] < pivot) {
-        i++;
-      }
-      // If the current value from the right list is larger then the pivot
-      // element then get the next element from the right list
-      while (numbers[j] > pivot) {
-        j--;
-      }
+   
 
       // If we have found a values in the left list which is larger then
       // the pivot element and if we have found a value in the right list
@@ -52,6 +39,21 @@ public class Quicksort  {
     if (i < high)
       quicksort(i, high);
   }
+  
+   // Divide into two lists
+    while (i <= j) {
+      //spaces
+      //tabs
+      // If the current value from the left list is smaller then the pivot
+      // element then get the next element from the left list
+      while (numbers[i] < pivot) {
+        i++;
+      }
+      // If the current value from the right list is larger then the pivot
+      // element then get the next element from the right list
+      while (numbers[j] > pivot) {
+        j--;
+      }
 
   private void swap(int i, int j) {
     numbers[i] = numbers[i] + numbers[j];
