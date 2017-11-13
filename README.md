@@ -9,6 +9,7 @@ Sample program used to show students Gradle in action.
 What was done
 ===========
 
+
 ####NOTE: I used gradle 2.1 in the lecture.
 
 ## Create project
