@@ -4,6 +4,7 @@ hugb_hello_world
 
 1111
 222
+123
 
 
 Sample program used to show students Gradle in action.
