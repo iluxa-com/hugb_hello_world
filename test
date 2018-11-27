@@ -9,8 +9,6 @@
       } finally {
         cleanUpTestDirectories(rootTempDir);
       }
-      
-      
     } else {
     
       Assert.fail(String.format("Failed to create test directory %s", subPath));
