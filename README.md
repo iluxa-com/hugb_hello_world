@@ -12,6 +12,7 @@ model isn't changed
 What was done
 ===========
 
+
 ####NOTE: I used gradle 2.1 in the lecture.
 
 ## Create project
