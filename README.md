@@ -3,6 +3,9 @@ hugb_hello_world
 (T-303-HUGB, Hugbúnaðarfræði, 2014-3)
 
 1111
+222
+123
+
 
 Sample program used to show students Gradle in action.
 
